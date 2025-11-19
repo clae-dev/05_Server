@@ -1,0 +1,28 @@
+package edu.kh.jsp2.controller;
+
+import java.io.IOException;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+@WebServlet("/el/scope")
+public class ELTestServlet2 extends HttpServlet {
+	
+	// a태그 요청은 GET 방식 -> doGet() 오버라이딩
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) 
+											throws ServletException, IOException {
+		
+		// 요청처리
+		
+		// 1. page scope -> JSP에서만 확인가능 (딱 1페이지 유효)
+		
+		
+		
+		// 응답처리
+		
+	}
+}

@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3>index.html 과 index.jsp 차이</h3>
+	<pre>
+HTML : html, css, js 코드 작성 가능
+	+ 정적 페이지 (미리 만들어둔 형태 그대로)		
+	
+jsp : html, css, js, java, el, jstl 작성 가능
+	+ 동적 페이지(요청에 따라 응답화면 변함)	
+	</pre>
+	
+	<hr>
+	
+	<form action="/el/test1">
+	
+	
+	
+	
+	
+	</form>
+	
+	
+</body>
+</html>

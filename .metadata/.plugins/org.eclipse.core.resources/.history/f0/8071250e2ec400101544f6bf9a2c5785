@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>EL 확인 1</title>
+</head>
+<body>
+	<h3>전달받은 파라미터 출력하기</h3>
+	<pre>
+		- \${param.key} : key 일치하는 파라미터 얻어오기
+		- \${paramValues.key} : key 일치하는 파라미터 모두 얻어오기(배열)
+	</pre>
+
+	<ul>
+		<%-- EL은 문자열 비교 == (비교연산자) 사용 가능 --%>
+		<li>${param.str == "abc"}</li>
+		<li>${param.intNum == 100}</li>
+		<li>${param.doubleNum == 3.14}</li>
+	</ul>
+
+
+
+
+</body>
+</html>

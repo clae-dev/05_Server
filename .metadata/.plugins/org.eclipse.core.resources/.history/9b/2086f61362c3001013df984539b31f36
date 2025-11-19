@@ -1,0 +1,18 @@
+package edu.kh.servlet.controller;
+
+import jakarta.servlet.http.HttpServlet;
+/*
+ * jakarta.servlet.http.HttpServlet 
+ * 
+ * 
+ * 
+ * */
+
+
+
+
+
+public class ExampleController1 extends HttpServlet{
+	
+	
+}
