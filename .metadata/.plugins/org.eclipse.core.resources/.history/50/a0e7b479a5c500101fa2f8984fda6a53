@@ -1,0 +1,10 @@
+package edu.kh.jsp2.controller;
+
+public class BookServlet {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,43 @@
+package edu.kh.todoList.controller;
+
+import java.io.IOException;
+
+import edu.kh.todoList.model.dto.Todo;
+import edu.kh.todoList.model.service.TodoListService;
+import edu.kh.todoList.model.service.TodoListServiceImpl;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+@WebServlet("/todo/detail")
+public class DetailServlet extends HttpServlet{
+
+	
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) 
+			throws ServletException, IOException {
+		
+		// 할 일 상세 조회 요청 처리
+		try {
+			
+			// 서비스 객체 생성
+			TodoListService service = new TodoListServiceImpl();
+			
+			// 요청 시 전달받은 파라미터 얻어오기
+			int todoNo = Integer.parseInt(req.getParameter("todoNo"));
+			
+			// 알맞은 서비스 호출 후 결과 반환 받기
+			 Todo todo = service.todoDetail(todoNo);
+			 // TODO_NO 컬럼값이 todoNo와 같은 행이 있으면
+			 // 해당 행의 데이터를 Todo 객체에 담아 반환
+			 // 없으면 null 반환
+			 
+		} catch (Exception e) {
+		e.printStackTrace();
+		}
+		
+		
+	}
+}

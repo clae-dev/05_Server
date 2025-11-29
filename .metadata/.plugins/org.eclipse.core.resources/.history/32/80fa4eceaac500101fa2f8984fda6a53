@@ -1,0 +1,27 @@
+package edu.kh.jsp2.controller;
+
+import java.io.IOException;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+@WebServlet("/fr/redirect")
+public class RedirectServlet extends HttpServlet {
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) 
+							throws ServletException, IOException {
+		
+		// request scope 속성 추가
+		req.setAttribute("str2", "request scope에 세팅된 값");
+		
+		// 재요청 (redirect)
+		
+		// resp.sendRedirect("다시 요청할 Servlet 주소");
+		
+		
+	}
+}
